@@ -1,0 +1,90 @@
+.stepThreeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  color: hsl(213, 96%, 18%);
+  align-self: flex-start !important;
+}
+.caption {
+  align-self: flex-start !important;
+  color: hsl(231, 11%, 63%);
+}
+
+.listGroup {
+  list-style-type: none;
+  width: 100%;
+  margin-top: 3rem;
+}
+.listItem {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid hsl(231, 11%, 80%);
+  border-radius: 10px;
+}
+.listItem[isActive="true"] {
+  background-color: rgba(72, 62, 255, 0.1);
+  border-color: rgb(72, 62, 255);
+}
+
+.listItem input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  accent-color: rgb(72, 62, 255);
+  border: 2px solid hsl(231, 11%, 80%) !important;
+}
+.listItem__textGroup {
+  margin-left: 3rem;
+}
+.listItem__price {
+  margin-left: auto;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.backButton {
+  width: 10rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+.backButton:hover {
+  background-color: hsl(213, 96%, 8%);
+  opacity: 0.5;
+  color: hsl(217, 100%, 97%);
+}
+.nextButton {
+  width: 10rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  margin-left: auto;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border: 3px solid;
+  border-color: transparent;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.nextButton:hover {
+  background-color: transparent;
+  color: hsl(213, 96%, 18%);
+  border-color: hsl(213, 96%, 18%);
+}

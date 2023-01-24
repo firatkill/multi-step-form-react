@@ -1,0 +1,144 @@
+.stepTwoContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: hsl(213, 96%, 18%);
+  align-self: flex-start !important;
+}
+.caption {
+  align-self: flex-start !important;
+  color: hsl(231, 11%, 63%);
+}
+
+.toggleButton {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  background-color: rgba(72, 62, 255, 0.1);
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+.toggleButton .button {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.toggleButton p {
+  color: hsl(231, 11%, 63%);
+  font-weight: bolder;
+}
+.toggleButton p[isActive="true"] {
+  color: hsl(213, 96%, 18%);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggleButton input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.toggleButton input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.toggleButton input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.backButton {
+  width: 10rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+.backButton:hover {
+  background-color: hsl(213, 96%, 8%);
+  opacity: 0.5;
+  color: hsl(217, 100%, 97%);
+}
+.nextButton {
+  width: 10rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  margin-left: auto;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border: 3px solid;
+  border-color: transparent;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.nextButton:hover {
+  background-color: transparent;
+  color: hsl(213, 96%, 18%);
+  border-color: hsl(213, 96%, 18%);
+}

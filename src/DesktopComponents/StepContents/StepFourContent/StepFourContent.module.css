@@ -1,0 +1,108 @@
+.stepFourContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: hsl(213, 96%, 18%);
+  align-self: flex-start !important;
+}
+.caption {
+  align-self: flex-start !important;
+  color: hsl(231, 11%, 63%);
+}
+
+.checkList {
+  list-style-type: none;
+  width: 70%;
+  margin-top: 3rem;
+}
+.checkList__purchases {
+  background-color: hsl(217, 100%, 97%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.listItem:first-of-type p {
+  font-weight: bolder;
+  color: hsl(213, 96%, 18%) !important;
+}
+.listItem:first-of-type span {
+  margin-left: 1rem;
+  text-decoration-line: underline;
+  cursor: pointer;
+  color: hsl(231, 11%, 63%);
+}
+.listItem p:last-of-type {
+  color: hsl(213, 96%, 18%);
+}
+.listItem p:first-of-type {
+  color: hsl(231, 11%, 63%);
+}
+.lastListItem {
+  padding: 2rem;
+}
+.lastListItem p:first-of-type {
+  color: hsl(231, 11%, 63%) !important;
+}
+.lastListItem p:last-of-type {
+  color: rgb(72, 62, 255) !important;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.backButton {
+  width: 10rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+.backButton:hover {
+  background-color: hsl(213, 96%, 8%);
+  opacity: 0.5;
+  color: hsl(217, 100%, 97%);
+}
+.nextButton {
+  width: 10rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  margin-left: auto;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border: 3px solid;
+  border-color: transparent;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.nextButton:hover {
+  background-color: transparent;
+  color: hsl(213, 96%, 18%);
+  border-color: hsl(213, 96%, 18%);
+}
