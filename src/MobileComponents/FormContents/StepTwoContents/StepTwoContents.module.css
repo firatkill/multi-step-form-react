@@ -1,0 +1,104 @@
+.stepTwoContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: hsl(213, 96%, 18%);
+  font-size: 4vw;
+  align-self: flex-start !important;
+}
+.caption {
+  font-size: 3vw;
+  align-self: flex-start !important;
+  color: hsl(231, 11%, 63%);
+}
+
+.toggleButton {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  background-color: rgba(72, 62, 255, 0.1);
+  border-radius: 10px;
+  font-size: 4vw;
+}
+.toggleButton .button {
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: auto;
+  margin-bottom: -1vw;
+}
+.toggleButton p {
+  color: hsl(231, 11%, 63%);
+  font-weight: bolder;
+}
+.toggleButton p[isActive="true"] {
+  color: hsl(213, 96%, 18%);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+
+  width: 6vw;
+  height: 3.4vw;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.6vw;
+  width: 2.6vw;
+  left: 0.4vw;
+  bottom: 0.4vw;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggleButton input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.toggleButton input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.toggleButton input:checked + .slider:before {
+  -webkit-transform: translateX(2.6vw);
+  -ms-transform: translateX(2.6vw);
+  transform: translateX(2.6vw);
+}
+
+.slider.round {
+  border-radius: 3.4vw;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

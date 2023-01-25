@@ -1,0 +1,34 @@
+.title {
+  color: hsl(213, 96%, 18%);
+  font-size: 4vw;
+}
+.caption {
+  color: hsl(231, 11%, 63%);
+  font-size: 3vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.label {
+  color: hsl(213, 96%, 18%);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+  font-size: 4vw;
+}
+.input {
+  border-radius: 2vw;
+  font-size: 4vw;
+  padding-left: 4vw;
+  height: 10vw;
+  border-width: 0.5vw;
+  font-weight: bolder;
+  color: hsl(213, 96%, 18%);
+}
+.input::placeholder {
+  color: hsl(231, 11%, 63%);
+  font-size: 4vw;
+}

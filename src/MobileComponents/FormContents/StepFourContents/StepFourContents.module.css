@@ -1,0 +1,67 @@
+.stepFourContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: hsl(213, 96%, 18%);
+  align-self: flex-start !important;
+  font-size: 4vw;
+}
+.caption {
+  align-self: flex-start !important;
+  color: hsl(231, 11%, 63%);
+  font-size: 3vw;
+}
+
+.checkList {
+  list-style-type: none;
+  width: 100%;
+  margin-top: 3vw;
+  font-size: 4vw;
+}
+.checkList__purchases {
+  background-color: hsl(217, 100%, 97%);
+  padding: 2vw;
+  border-radius: 10px;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.listItem:first-of-type p {
+  font-weight: bolder;
+  color: hsl(213, 96%, 18%) !important;
+}
+.listItem:first-of-type span {
+  margin-left: 2vw;
+  text-decoration-line: underline;
+  cursor: pointer;
+  color: hsl(231, 11%, 63%);
+}
+.listItem p:last-of-type {
+  color: hsl(213, 96%, 18%);
+}
+.listItem p:first-of-type {
+  color: hsl(231, 11%, 63%);
+}
+.lastListItem {
+  padding: 2vw;
+}
+.lastListItem p:first-of-type {
+  color: hsl(231, 11%, 63%) !important;
+}
+.lastListItem p:last-of-type {
+  color: rgb(72, 62, 255) !important;
+  font-size: 4vw;
+  font-weight: bolder;
+}

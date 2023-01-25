@@ -1,0 +1,8 @@
+.formContentContainer {
+  width: 90%;
+  height: fit-content;
+  border-radius: 10px;
+  margin: auto;
+  background-color: hsl(231, 100%, 99%);
+  padding: 2rem 1rem;
+}
