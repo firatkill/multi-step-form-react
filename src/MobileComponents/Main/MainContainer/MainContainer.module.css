@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   width: 100vw;
-  height: max-content;
+  height: 100vh;
   overflow: hidden;
   background-color: hsl(217, 100%, 97%);
 }
